@@ -42,3 +42,40 @@ Route::get('/blog-single', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+Route::get('/apply_now', function () {
+    return view('applynow');
+});
+
+Route::get('/description', function () {
+    return view('description');
+});
+
+Route::get('/apply_now', function () {
+    return view('applynow');
+});
+
+Route::get('/registration', function () {
+    return view('registration');
+});
+
+Route::get('/application2', function () {
+    return view('application2');
+});
+
+Route::get('/education_details', function () {
+    return view('education_details');
+});
+
+Route::get('/Personal_information', function () {
+    return view('Personal_information');
+});
+
+Route::get('/verification_information', function () {
+    return view('verification_information');
+});
+
+Route::get('/final_sumbit', function () {
+    return view('final_sumbit');
+});
+

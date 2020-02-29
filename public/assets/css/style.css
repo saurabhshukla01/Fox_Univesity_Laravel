@@ -9867,3 +9867,22 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+
+/* My style css */
+
+ul,li {list-style-type:none;}
+.Education
+ {
+    width: 135px;
+    display: inline-block;
+    font-size:12px;
+ }
+
+ input::placeholder {
+    font-size:12px;
+    color:#ccc !important;
+ }
+
+/* End my style css */
