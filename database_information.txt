@@ -1,0 +1,9 @@
+1)  create database fox_university_db
+2) create tables :
+create_courses_tables
+create_registration_tables
+create_personal_information_tables
+create_education_information_tables
+create_verification_information_tables
+
+3)

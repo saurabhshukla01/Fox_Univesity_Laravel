@@ -55,14 +55,26 @@ Route::get('/apply_now', function () {
     return view('applynow');
 });
 
+Route::get('/registration','RegistrationController@index');
+Route::post('/registration','RegistrationController@store');
+Route::get('/Personal_information','PersonalInformationController@index');
+Route::post('/Personal_information','PersonalInformationController@store');
+Route::get('/education_details','EducationInformationController@index');
+Route::post('/education_details','EducationInformationController@store');
+Route::get('/verification_information','VerificationController@index');
+Route::post('/verification_information','VerificationController@store');
+
+/*
 Route::get('/registration', function () {
     return view('registration');
 });
+*/
 
 Route::get('/application2', function () {
     return view('application2');
 });
 
+/*
 Route::get('/education_details', function () {
     return view('education_details');
 });
@@ -74,6 +86,7 @@ Route::get('/Personal_information', function () {
 Route::get('/verification_information', function () {
     return view('verification_information');
 });
+*/
 
 Route::get('/final_sumbit', function () {
     return view('final_sumbit');

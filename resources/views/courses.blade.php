@@ -1,7 +1,6 @@
 @extends('layout.common')
 @section('main')
 @section('title', 'Courses')
-
     <section class="ftco-section">
 			<div class="container-fluid px-4">
 				<div class="row">
