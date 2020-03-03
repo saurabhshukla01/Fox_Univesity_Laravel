@@ -1,9 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Database\QueryException;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Model\Verification_Information_model;
+
 
 class VerificationController extends Controller
 {
@@ -12,10 +14,12 @@ class VerificationController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $data_value = Verification_Information_model::all();
-        return view('verification_information',compact('data_value'));
+        //$data_value = Verification_Information_model::all();
+        $data_value = Verification_Information_model::where('user_id')->get();
+        return view('verification_information',['data'=>$data_value]);
+        //print_r($request->file());
     }
 
     /**
@@ -37,10 +41,12 @@ class VerificationController extends Controller
     public function store(Request $request)
     {
         $data = new Verification_Information_model();
-        $data->student_photo = request('student_photo');
-        $data->student_sing = request('student_sing');
+        $path = $request->file('student_photo')->store('public');
+        //print_r($path);
+        $data->student_photo = $path;
         $data->save();
         return redirect('/verification_information');
+
     }
 
     /**

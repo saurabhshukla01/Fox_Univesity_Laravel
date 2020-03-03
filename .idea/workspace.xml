@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50daa729-d1ff-4794-96ed-8f228b0fe496" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database_information.txt" afterDir="false" />
+    <list default="true" id="817cede5-66f5-42b6-a0ac-dd9ab828e7c7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Personal_information.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Personal_information.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/courses.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/courses.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/education_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/education_details.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/registration.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/registration.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/VerificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/VerificationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_29_160846_create_verification_information_tables.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_29_160846_create_verification_information_tables.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/verification_information.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/verification_information.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/.gitignore" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,22 +19,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1YOhiFq0r0KVVuxBTgzbB2Wmo9H" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1Yc5So0rpw3SaOErcKRvgRAsoCN" />
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Fox_University\resources\views" />
-      <recent name="C:\xampp\htdocs\Fox_University\resources\views\layout" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Fox_University\resources\views" />
-      <recent name="C:\xampp\htdocs\Fox_University\public" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -49,19 +35,16 @@
       </list>
     </option>
   </component>
-  <component name="ServiceViewManager">
-    <option name="showServicesTree" value="false" />
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="50daa729-d1ff-4794-96ed-8f228b0fe496" name="Default Changelist" comment="" />
-      <created>1582819672804</created>
+      <changelist id="817cede5-66f5-42b6-a0ac-dd9ab828e7c7" name="Default Changelist" comment="" />
+      <created>1583229044743</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1582819672804</updated>
+      <updated>1583229044743</updated>
     </task>
     <servers />
   </component>
