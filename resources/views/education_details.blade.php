@@ -5,7 +5,7 @@
 			<div class="container">
 			    <h2 class="text-center pt-4 pb-4"> Educational Information </h2>
 				<div class="row d-flex">
-                     <form class=" row w-100" action="" method="post">
+                     <form class=" row w-100" action="education_details_post" method="post">
                         @csrf
                           <div class="w-100">
                               <h3> Highschool </h3>

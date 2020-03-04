@@ -70,7 +70,7 @@ class EducationInformationController extends Controller
         $data->mark_total3 = request('mark_total3');
         $data->percentage_mark3 = request('percentage_mark3');
         $data->save();
-        return redirect('/education_details');
+        return redirect('/verification_information');
     }
 
     /**

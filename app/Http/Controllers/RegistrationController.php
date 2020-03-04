@@ -49,7 +49,7 @@ class RegistrationController extends Controller
         $data->email = request('email');
         $data->mobile = request('mobile');
         $data->save();
-        return redirect('/registration');
+        return redirect('/Personal_information');
     }
 
     /**

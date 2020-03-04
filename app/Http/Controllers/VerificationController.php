@@ -45,7 +45,7 @@ class VerificationController extends Controller
         //print_r($path);
         $data->student_photo = $path;
         $data->save();
-        return redirect('/verification_information');
+        return redirect('/final_sumbit');
 
     }
 

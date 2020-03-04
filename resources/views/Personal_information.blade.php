@@ -5,7 +5,7 @@
 			<div class="container">
 			    <h2 class="text-center pt-4 pb-4"> Personal Information </h2>
 				<div class="row d-flex">
-                     <form class=" row w-100" action="" method="post">
+                     <form class=" row w-100" action="Personal_information_post" method="post">
                         @csrf
                         <div class="col-md-6">
                               <div class="form-group">

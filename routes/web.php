@@ -56,14 +56,15 @@ Route::get('/apply_now', function () {
 });
 
 Route::get('/registration','RegistrationController@index');
-Route::post('/registration','RegistrationController@store');
+Route::post('/registration_post','RegistrationController@store');
 Route::get('/Personal_information','PersonalInformationController@index');
-Route::post('/Personal_information','PersonalInformationController@store');
+Route::post('/Personal_information_post','PersonalInformationController@store');
 Route::get('/education_details','EducationInformationController@index');
-Route::post('/education_details','EducationInformationController@store');
+Route::post('/education_details_post','EducationInformationController@store');
 Route::get('/verification_information','VerificationController@index');
-Route::post('/verification_information','VerificationController@store');
+Route::post('/verification_information_post','VerificationController@store');
 
+Route::get('/pdf-download','PDFController@PDFgenerator');
 /*
 Route::get('/registration', function () {
     return view('registration');

@@ -45,7 +45,7 @@ class PersonalInformationController extends Controller
         $data->pincode = request('pincode');
         $data->addhar_number = request('addhar_number');
         $data->save();
-        return redirect('/Personal_information');
+        return redirect('/education_details');
     }
 
     /**
