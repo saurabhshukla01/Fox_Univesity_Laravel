@@ -1,25 +1,21 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Database\QueryException;
+
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
-use App\Model\Verification_Information_model;
+use App\Model\Courses_model;
 
-
-class VerificationController extends Controller
+class Course_controller extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
+    public function index()
     {
-        //$data_value = Verification_Information_model::all();
-        $data_value = Verification_Information_model::where('user_id')->get();
-        return view('verification_information',['data'=>$data_value]);
-        //print_r($request->file());
+        $data_value = Courses_model::where('course_id')->get();
+        return view('add_course',['data'=>$data_value]);
     }
 
     /**
@@ -40,13 +36,16 @@ class VerificationController extends Controller
      */
     public function store(Request $request)
     {
-        $data = new Verification_Information_model();
-        $path = $request->file('student_photo')->store('public/Student');
-        //print_r($path);
-        $data->student_photo = $path;
+        $data = new Courses_model();
+        $data->course_name = request('course_name');
+        $data->course_descripition = request('course_descripition');
+        $data->course_duration = request('course_duration');
+        $data->course_seat = request('course_seat');
+        $path = $request->file('course_image')->store('public/Courses');
+        $data->course_image = $path;
+        //$data->course_image = "public/Courses/1.png";
         $data->save();
-        return redirect('/final_sumbit');
-
+        return redirect('/add_course');
     }
 
     /**

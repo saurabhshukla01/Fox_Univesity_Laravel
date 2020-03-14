@@ -1,25 +1,24 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Database\QueryException;
+
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
-use App\Model\Verification_Information_model;
+use App\Model\Teacher_model;
 
-
-class VerificationController extends Controller
+class Teacher_controller extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
+    public function index()
     {
-        //$data_value = Verification_Information_model::all();
-        $data_value = Verification_Information_model::where('user_id')->get();
-        return view('verification_information',['data'=>$data_value]);
-        //print_r($request->file());
+        $data_value = Teacher_model::where('teacher_id')->get();
+        return view('teacher_entry',['data'=>$data_value]);
+
+        //$data_value = Teacher_model::all();
+        //return view('teacher_entry',compact('data_value'));
     }
 
     /**
@@ -40,13 +39,15 @@ class VerificationController extends Controller
      */
     public function store(Request $request)
     {
-        $data = new Verification_Information_model();
-        $path = $request->file('student_photo')->store('public/Student');
-        //print_r($path);
-        $data->student_photo = $path;
+        $data = new Teacher_model();
+        $data->teacher_name = request('teacher_name');
+        $data->subject_teacher = request('subject_teacher');
+        $data->teacher_biology = request('teacher_biology');
+        $path = $request->file('teacher_image')->store('public/Teacher');
+        $data->teacher_image = $path;
+        //$data->teacher_image = "public/Courses/1.png";
         $data->save();
-        return redirect('/final_sumbit');
-
+        return redirect('/add_teacher');
     }
 
     /**

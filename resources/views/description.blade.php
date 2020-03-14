@@ -73,7 +73,7 @@ I have read and understood all the eligibility conditions and instructions regar
                         <input type="checkbox" class="form-check-input" value="">I Agree
                         </label>
                      </div>
-                     <button type="submit" onclick=window.location.href="/registration" class="btn btn-primary">Submit</button>
+                     <button type="submit" onclick=window.location.href="http://127.0.0.1:8000/registration" class="btn btn-primary">Submit</button>
                  </div>
 
         </div>

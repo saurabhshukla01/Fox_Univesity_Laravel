@@ -51,10 +51,21 @@ Route::get('/description', function () {
     return view('description');
 });
 
-Route::get('/apply_now', function () {
-    return view('applynow');
+/*
+Route::get('/add_course', function () {
+    return view('add_course');
 });
 
+
+Route::get('/add_teacher', function () {
+    return view('teacher_entry');
+});
+*/
+
+Route::get('/add_course','Course_controller@index');
+Route::post('/add_course_post','Course_controller@store');
+Route::get('/add_teacher','Teacher_controller@index');
+Route::post('/add_teacher_post','Teacher_controller@store');
 Route::get('/registration','RegistrationController@index');
 Route::post('/registration_post','RegistrationController@store');
 Route::get('/Personal_information','PersonalInformationController@index');
