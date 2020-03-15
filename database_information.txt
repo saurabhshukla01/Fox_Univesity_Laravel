@@ -6,5 +6,6 @@ create_personal_information_tables
 create_education_information_tables
 create_verification_information_tables
 create teacher tables
+create Blog Tables
 
 3)

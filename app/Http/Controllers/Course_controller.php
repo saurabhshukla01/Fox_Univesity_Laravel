@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use DB;
 use Illuminate\Http\Request;
 use App\Model\Courses_model;
 
@@ -14,6 +15,7 @@ class Course_controller extends Controller
      */
     public function index()
     {
+        //$data_value = Courses_model::where('course_id')->get();
         $data_value = Courses_model::where('course_id')->get();
         return view('add_course',['data'=>$data_value]);
     }
@@ -54,9 +56,12 @@ class Course_controller extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
-        //
+        $data_values = DB::select('select * from courses_tables');
+        //print_r($data_values);
+        //die();
+        return view('courses',['data_values'=>$data_values]);
     }
 
     /**

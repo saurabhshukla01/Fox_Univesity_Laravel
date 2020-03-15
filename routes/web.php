@@ -23,6 +23,8 @@ Route::get('/about', function () {
     return view('about');
 });
 
+/*
+
 Route::get('/courses', function () {
     return view('courses');
 });
@@ -30,6 +32,8 @@ Route::get('/courses', function () {
 Route::get('/staff', function () {
     return view('teacher');
 });
+
+*/
 
 Route::get('/blog', function () {
     return view('blog');
@@ -56,16 +60,31 @@ Route::get('/add_course', function () {
     return view('add_course');
 });
 
-
 Route::get('/add_teacher', function () {
     return view('teacher_entry');
 });
+
+Route::get('/add_blog', function () {
+    return view('add_blog');
+});
 */
 
+Route::get('/services', function () {
+    return view('services');
+});
+
+Route::get('/deparments', function () {
+    return view('deparments');
+});
+
+Route::get('/add_blog','BlogController@index');
+Route::post('/add_blog_post','BlogController@store');
 Route::get('/add_course','Course_controller@index');
 Route::post('/add_course_post','Course_controller@store');
+Route::get('/courses','Course_controller@show');
 Route::get('/add_teacher','Teacher_controller@index');
 Route::post('/add_teacher_post','Teacher_controller@store');
+Route::get('/staff','Teacher_controller@show');
 Route::get('/registration','RegistrationController@index');
 Route::post('/registration_post','RegistrationController@store');
 Route::get('/Personal_information','PersonalInformationController@index');

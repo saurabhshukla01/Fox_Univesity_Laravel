@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use DB;
 use Illuminate\Http\Request;
 use App\Model\Teacher_model;
 
@@ -56,9 +57,12 @@ class Teacher_controller extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
-        //
+        $data_values = DB::select('select * from teachers');
+        //print_r($data_values);
+        //die();
+        return view('teacher',['data_values'=>$data_values]);
     }
 
     /**
