@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use DB;
 use Illuminate\Http\Request;
 use App\Model\Blog_model;
 
@@ -14,8 +15,8 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $data_value = Blog_model::where('blog_id')->get();
-        return view('add_blog',['data'=>$data_value]);
+        $blogs = Blog_model::where('blog_id')->get();
+        return view('add_blog',['blogs'=>$blogs]);
     }
 
     /**
@@ -39,9 +40,8 @@ class BlogController extends Controller
         $data = new Blog_model();
         $data->blog_title = request('blog_title');
         $data->blog_descripition = request('blog_descripition');
-        $path = $request->file('blog_image')->store('public/Blog');
+        $path = $request->file('blog_image')->store('Blog');
         $data->blog_image = $path;
-        //$data->blog_image = "public/Courses/1.png";
         $data->save();
         return redirect('/add_blog');
     }
@@ -52,9 +52,12 @@ class BlogController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
-        //
+        $blogs = DB::select('select * from blogs');
+        //print_r($blogs);
+        //die();
+        return view('blog',['blogs'=>$blogs]);
     }
 
     /**

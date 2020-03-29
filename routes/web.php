@@ -15,9 +15,11 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
+/*
 Route::get('/', function () {
     return view('index');
 });
+*/
 
 Route::get('/about', function () {
     return view('about');
@@ -33,11 +35,11 @@ Route::get('/staff', function () {
     return view('teacher');
 });
 
-*/
-
 Route::get('/blog', function () {
     return view('blog');
 });
+
+*/
 
 Route::get('/blog-single', function () {
     return view('blog-single');
@@ -77,8 +79,11 @@ Route::get('/deparments', function () {
     return view('deparments');
 });
 
+Route::get('','HomeController@index');
+Route::get('home1','HomeController@show');
 Route::get('/add_blog','BlogController@index');
 Route::post('/add_blog_post','BlogController@store');
+Route::get('/blog','BlogController@show');
 Route::get('/add_course','Course_controller@index');
 Route::post('/add_course_post','Course_controller@store');
 Route::get('/courses','Course_controller@show');
@@ -122,4 +127,6 @@ Route::get('/verification_information', function () {
 Route::get('/final_sumbit', function () {
     return view('final_sumbit');
 });
+
+
 

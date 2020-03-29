@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf80c6a7-1f8e-4895-9f74-f9da5e71e516" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/add_blog.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/courses_bk_15_3.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/deparments.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/services.blade.php" afterDir="false" />
+    <list default="true" id="6ba5871e-288f-4a30-b3e6-d49c78f2bf9e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/blog_bk_29_3.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/index_bk_24_3.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/try.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Course_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Course_controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CoursesController.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Teacher_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Teacher_controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Model/Courses_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/Courses_model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database_dump/database_information.txt" beforeDir="false" afterPath="$PROJECT_DIR$/database_dump/database_information.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database_information.txt" beforeDir="false" afterPath="$PROJECT_DIR$/database_information.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/VerificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/VerificationController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/blog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/courses.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/courses.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/common.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/common.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/teacher.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/teacher.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -30,10 +25,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1YnafioTvWtQ3uL7NhmTuNRvnIR" />
+  <component name="ProjectId" id="1Zl6Uf84Co6XHbN60D9AqoAJAH7" />
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
-    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -53,19 +47,16 @@
       </list>
     </option>
   </component>
-  <component name="ServiceViewManager">
-    <option name="showServicesTree" value="false" />
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cf80c6a7-1f8e-4895-9f74-f9da5e71e516" name="Default Changelist" comment="" />
-      <created>1583580917032</created>
+      <changelist id="6ba5871e-288f-4a30-b3e6-d49c78f2bf9e" name="Default Changelist" comment="" />
+      <created>1585401351464</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1583580917032</updated>
+      <updated>1585401351464</updated>
     </task>
     <servers />
   </component>

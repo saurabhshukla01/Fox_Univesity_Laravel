@@ -15,11 +15,11 @@ class Teacher_controller extends Controller
      */
     public function index()
     {
-        $data_value = Teacher_model::where('teacher_id')->get();
-        return view('teacher_entry',['data'=>$data_value]);
+        $teachers = Teacher_model::where('teacher_id')->get();
+        return view('teacher_entry',['teachers'=>$teachers]);
 
-        //$data_value = Teacher_model::all();
-        //return view('teacher_entry',compact('data_value'));
+        //$teachers = Teacher_model::all();
+        //return view('teacher_entry',compact('teachers'));
     }
 
     /**
@@ -44,7 +44,7 @@ class Teacher_controller extends Controller
         $data->teacher_name = request('teacher_name');
         $data->subject_teacher = request('subject_teacher');
         $data->teacher_biology = request('teacher_biology');
-        $path = $request->file('teacher_image')->store('public/Teacher');
+        $path = $request->file('teacher_image')->store('Teacher');
         $data->teacher_image = $path;
         //$data->teacher_image = "public/Courses/1.png";
         $data->save();
@@ -59,10 +59,10 @@ class Teacher_controller extends Controller
      */
     public function show()
     {
-        $data_values = DB::select('select * from teachers');
+        $teachers = DB::select('select * from teachers');
         //print_r($data_values);
         //die();
-        return view('teacher',['data_values'=>$data_values]);
+        return view('teacher',['teachers'=>$teachers]);
     }
 
     /**

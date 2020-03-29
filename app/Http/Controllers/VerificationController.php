@@ -41,7 +41,7 @@ class VerificationController extends Controller
     public function store(Request $request)
     {
         $data = new Verification_Information_model();
-        $path = $request->file('student_photo')->store('public/Student');
+        $path = $request->file('student_photo')->store('Student');
         //print_r($path);
         $data->student_photo = $path;
         $data->save();

@@ -16,8 +16,8 @@ class Course_controller extends Controller
     public function index()
     {
         //$data_value = Courses_model::where('course_id')->get();
-        $data_value = Courses_model::where('course_id')->get();
-        return view('add_course',['data'=>$data_value]);
+        $courses = Courses_model::where('course_id')->get();
+        return view('add_course',['courses'=>$courses]);
     }
 
     /**
@@ -43,9 +43,8 @@ class Course_controller extends Controller
         $data->course_descripition = request('course_descripition');
         $data->course_duration = request('course_duration');
         $data->course_seat = request('course_seat');
-        $path = $request->file('course_image')->store('public/Courses');
+        $path = $request->file('course_image')->store('Courses');
         $data->course_image = $path;
-        //$data->course_image = "public/Courses/1.png";
         $data->save();
         return redirect('/add_course');
     }
@@ -58,10 +57,10 @@ class Course_controller extends Controller
      */
     public function show()
     {
-        $data_values = DB::select('select * from courses_tables');
+        $courses = DB::select('select * from courses_tables');
         //print_r($data_values);
         //die();
-        return view('courses',['data_values'=>$data_values]);
+        return view('courses',['courses'=>$courses]);
     }
 
     /**
