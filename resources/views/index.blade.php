@@ -174,7 +174,7 @@
                   <div class="block-18">
                      <div class="icon"><span class="flaticon-doctor"></span></div>
                      <div class="text">
-                        <strong class="number" data-number="18">0</strong>
+                        <strong class="number" data-number="{{ count($teachers) }}">0</strong>
                         <span>Certified Teachers</span>
                      </div>
                   </div>
@@ -192,7 +192,7 @@
                   <div class="block-18">
                      <div class="icon"><span class="flaticon-doctor"></span></div>
                      <div class="text">
-                        <strong class="number" data-number="30">0</strong>
+                        <strong class="number" data-number="{{ count($courses) }}">0</strong>
                         <span>Courses</span>
                      </div>
                   </div>
@@ -203,6 +203,15 @@
                      <div class="text">
                         <strong class="number" data-number="50">0</strong>
                         <span>Awards Won</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                  <div class="block-18">
+                     <div class="icon"><span class="flaticon-doctor"></span></div>
+                     <div class="text">
+                        <strong class="number" data-number="{{ count($blogs) }}">0</strong>
+                        <span>Blogs</span>
                      </div>
                   </div>
                </div>
@@ -373,76 +382,22 @@
       <div class="row ftco-animate justify-content-center">
          <div class="col-md-12">
             <div class="carousel-testimony owl-carousel">
+            @foreach ($teachers as $teacher)
                <div class="item">
                   <div class="testimony-wrap d-flex">
-                     <div class="user-img mr-4" style="background-image: url(assets/images/teacher-1.jpg)">
+                     <div class="user-img mr-4" style="background-image: url(storage/{{ $teacher->teacher_image }})">
                      </div>
                      <div class="text ml-2">
                         <span class="quote d-flex align-items-center justify-content-center">
                         <i class="icon-quote-left"></i>
                         </span>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <p class="name">Racky Henderson</p>
-                        <span class="position">Father</span>
+                        <p>{{ $teacher->teacher_biology }}</p>
+                        <p class="name">{{ $teacher->subject_name }}</p>
+                        <span class="position">{{ $teacher->subject_teacher }}</span>
                      </div>
                   </div>
                </div>
-               <div class="item">
-                  <div class="testimony-wrap d-flex">
-                     <div class="user-img mr-4" style="background-image: url(assets/images/teacher-2.jpg)">
-                     </div>
-                     <div class="text ml-2">
-                        <span class="quote d-flex align-items-center justify-content-center">
-                        <i class="icon-quote-left"></i>
-                        </span>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <p class="name">Henry Dee</p>
-                        <span class="position">Mother</span>
-                     </div>
-                  </div>
-               </div>
-               <div class="item">
-                  <div class="testimony-wrap d-flex">
-                     <div class="user-img mr-4" style="background-image: url(assets/images/teacher-3.jpg)">
-                     </div>
-                     <div class="text ml-2">
-                        <span class="quote d-flex align-items-center justify-content-center">
-                        <i class="icon-quote-left"></i>
-                        </span>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <p class="name">Mark Huff</p>
-                        <span class="position">Mother</span>
-                     </div>
-                  </div>
-               </div>
-               <div class="item">
-                  <div class="testimony-wrap d-flex">
-                     <div class="user-img mr-4" style="background-image: url(assets/images/teacher-4.jpg)">
-                     </div>
-                     <div class="text ml-2">
-                        <span class="quote d-flex align-items-center justify-content-center">
-                        <i class="icon-quote-left"></i>
-                        </span>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <p class="name">Rodel Golez</p>
-                        <span class="position">Mother</span>
-                     </div>
-                  </div>
-               </div>
-               <div class="item">
-                  <div class="testimony-wrap d-flex">
-                     <div class="user-img mr-4" style="background-image: url(assets/images/teacher-1.jpg)">
-                     </div>
-                     <div class="text ml-2">
-                        <span class="quote d-flex align-items-center justify-content-center">
-                        <i class="icon-quote-left"></i>
-                        </span>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <p class="name">Ken Bosh</p>
-                        <span class="position">Mother</span>
-                     </div>
-                  </div>
-               </div>
+            @endforeach
             </div>
          </div>
       </div>
@@ -451,34 +406,15 @@
 <section class="ftco-gallery">
    <div class="container-wrap">
       <div class="row no-gutters">
+      @foreach ($courses as $course)
          <div class="col-md-3 ftco-animate">
-            <a href="assets/images/image_1.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(assets/images/course-1.jpg);">
+            <a href="assets/images/image_4.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(storage/{{ $course->course_image }});">
                <div class="icon mb-4 d-flex align-items-center justify-content-center">
                   <span class="icon-instagram"></span>
                </div>
             </a>
          </div>
-         <div class="col-md-3 ftco-animate">
-            <a href="assets/images/image_2.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(assets/images/image_2.jpg);">
-               <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                  <span class="icon-instagram"></span>
-               </div>
-            </a>
-         </div>
-         <div class="col-md-3 ftco-animate">
-            <a href="assets/images/image_3.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(assets/images/image_3.jpg);">
-               <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                  <span class="icon-instagram"></span>
-               </div>
-            </a>
-         </div>
-         <div class="col-md-3 ftco-animate">
-            <a href="assets/images/image_4.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(assets/images/image_4.jpg);">
-               <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                  <span class="icon-instagram"></span>
-               </div>
-            </a>
-         </div>
+       @endforeach
       </div>
    </div>
 </section>

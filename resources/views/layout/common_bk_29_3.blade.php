@@ -155,25 +155,13 @@
           <div class="col-md-6 col-lg-3">
             <div class="ftco-footer-widget mb-5">
             	<h2 class="ftco-heading-2">Subscribe Us!</h2>
-                <form action="/signmail" class="subscribe-form" method="get">
+              <form action="#" class="subscribe-form">
                 <div class="form-group">
                   <input type="text" class="form-control mb-2 text-center" placeholder="Enter email address">
                   <input type="submit" value="Subscribe" class="form-control submit px-3">
                 </div>
               </form>
             </div>
-            <!--<div class="footer-newsletter">
-                 <h4>Our Newsletter</h4>
-                 <p>To subscribe our newsletter, Enter your E-mail id.</p>
-				 <form action="" method="POST">
-                      <div class="form-group" id="signform">
-                          <input class="form-control" name="signemail" id="signemail"  type="email" placeholder="Email Address">
-                          <label class="error" for="name" id="signemail_error" style="display: none;">This field is required.</label>
-                          <button class="subscribe btn btn-primary">Subscribe</button>
-                      </div>
-                      <div class="form-group" id="sign_form"></div>
-                  </form>
-            </div>-->
             <div class="ftco-footer-widget mb-5">
             	<h2 class="ftco-heading-2 mb-0">Connect With Us</h2>
             	<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
@@ -214,56 +202,9 @@
   <script src="assets/js/aos.js"></script>
   <script src="assets/js/jquery.animateNumber.min.js"></script>
   <script src="assets/js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="assets/https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="assets/js/google-map.js"></script>
   <script src="assets/js/main.js"></script>
-
-
-<!--<script>
-        $(function() {
-            $('.error').hide();
-            $(".subscribe").click(function() {
-              $('.error').hide();
-                var signemail = $("input#signemail").val();
-                if (signemail == "") {
-                $("label#signemail_error").show();
-                $("input#signemail").focus();
-                return false;
-              }
-              if(IsEmail(signemail)==false){
-                $('label#signemail_check_error').show();
-                return false;
-                }
-              var dataString = 'signemail=' + signemail;
-              $.ajax({
-                type: "POST",
-                url: "Information/signmail",
-                data: dataString,
-                success: function() {
-                  $('#signform').hide();
-                  $('#sign_form').html("<div id='message_sign'></div>");
-                  $('#message_sign').html("<p><i class='fa fa-check' aria-hidden='true'></i> Thank you for Subscribing !!</p>")
-                  .append("")
-                  .hide()
-                  .fadeIn(1500, function() {
-                    $('#message_sign').append("");
-                  });
-                }
-              });
-              return false;
-            });
-          });
-
-
-        function IsEmail(email) {
-            var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-            if(!regex.test(email)) {
-               return false;
-            }else{
-               return true;
-            }
-          }
-    </script>-->
 
   </body>
 </html>

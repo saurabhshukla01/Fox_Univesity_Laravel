@@ -19,13 +19,10 @@ Route::get('/welcome', function () {
 Route::get('/', function () {
     return view('index');
 });
-*/
 
 Route::get('/about', function () {
     return view('about');
 });
-
-/*
 
 Route::get('/courses', function () {
     return view('courses');
@@ -81,6 +78,8 @@ Route::get('/deparments', function () {
 
 Route::get('','HomeController@index');
 Route::get('home1','HomeController@show');
+Route::get('/about','InformationController@index');
+Route::get('/signmail','InformationController@signmail');
 Route::get('/add_blog','BlogController@index');
 Route::post('/add_blog_post','BlogController@store');
 Route::get('/blog','BlogController@show');
