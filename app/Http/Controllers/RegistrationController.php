@@ -38,7 +38,7 @@ class RegistrationController extends Controller
      */
     public function store(Request $request)
     {
-
+        $user_uid = mt_rand(10000000,99999999);
         $data = new Registration_model();
         $data->candidate_name = request('candidate_name');
         $data->candidate_father_name = request('candidate_father_name');
@@ -48,6 +48,8 @@ class RegistrationController extends Controller
         $data->Dob = request('Dob');
         $data->email = request('email');
         $data->mobile = request('mobile');
+        $data->user_uid = $data->candidate_name.$user_uid;
+        //print_r($data);die();
         $data->save();
         return redirect('/Personal_information');
     }

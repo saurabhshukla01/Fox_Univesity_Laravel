@@ -2,16 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ba5871e-288f-4a30-b3e6-d49c78f2bf9e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/about_bk_29_3.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layout/common_bk_29_3.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/signmail.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database_dump/fox_university_db.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Course_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Course_controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/InformationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/InformationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RegistrationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Teacher_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Teacher_controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_29_160644_create_registration_tables.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_29_160644_create_registration_tables.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_29_160741_create_personal_information_tables.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_29_160741_create_personal_information_tables.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_29_160812_create_education_information_tables.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_29_160812_create_education_information_tables.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_29_160846_create_verification_information_tables.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_29_160846_create_verification_information_tables.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database_dump/blogs.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database_dump/blogs.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database_dump/courses_tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database_dump/courses_tables.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database_dump/database_information.txt" beforeDir="false" afterPath="$PROJECT_DIR$/database_dump/database_information.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database_dump/teachers.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database_dump/teachers.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/add_blog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/add_blog.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/add_course.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/add_course.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/courses.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/courses.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layout/common.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/common.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/teacher.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/teacher.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/teacher_entry.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/teacher_entry.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/.gitignore" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,14 +38,16 @@
   </component>
   <component name="ProjectId" id="1Zl6Uf84Co6XHbN60D9AqoAJAH7" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layout" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/database_dump" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Fox_University\database_dump" />
+      <recent name="C:\xampp\htdocs\Fox_University\database\migrations" />
+      <recent name="C:\xampp\htdocs\Fox_University\public\storage" />
       <recent name="C:\xampp\htdocs\Fox_University\resources\views\layout" />
       <recent name="C:\xampp\htdocs\Fox_University\public\assets" />
-      <recent name="C:\xampp\htdocs\Fox_University\resources\views" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -45,6 +61,9 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="showServicesTree" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />

@@ -1,3 +1,17 @@
+All table drop and reset command :
+$ php artisan migrate:fresh
+All create table :
+Force fully create table :
+
+$ php artisan make:migration add_role_field_to_users_table
+$ php artisan migrate:rollback --step=1
+$ php artisan migrate --force
+$ php artisan migrate:rollback
+$ php artisan migrate:reset
+
+
+
+============================================================================================
 1)  create database fox_university_db
 2) create tables :
 create_courses_tables

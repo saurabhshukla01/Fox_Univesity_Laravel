@@ -15,6 +15,7 @@ class CreateEducationInformationTables extends Migration
     {
         Schema::create('education_information_tables', function (Blueprint $table) {
             $table->increments('user_id');
+            $table->char('user_uid');
             $table->char('board_university');
             $table->char('class_name');
             $table->string('university_collage_name');

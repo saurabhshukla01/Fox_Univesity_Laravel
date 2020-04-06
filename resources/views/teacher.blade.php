@@ -1,7 +1,6 @@
 @extends('layout.common')
 @section('main')
 @section('title', 'Staff')
-
     <section class="ftco-section bg-light">
 			<div class="container-fluid px-4">
 				<div class="row">
@@ -29,6 +28,9 @@
 					@endforeach
 				</div>
 			</div>
+			<div class="row text-right float-right pr-4">
+                <h5 class="m-2 p-2">{{ $teachers->links() }}</h5>
+            </div>
 		</section>
 @endsection
 

@@ -15,6 +15,7 @@ class CreateVerificationInformationTables extends Migration
     {
         Schema::create('verification_information_tables', function (Blueprint $table) {
             $table->increments('user_id');
+            $table->char('user_uid');
             $table->char('student_photo');
             //$table->binary('student_sign');
             $table->timestamps();

@@ -55,6 +55,7 @@ class BlogController extends Controller
     public function show()
     {
         $blogs = DB::select('select * from blogs');
+        $blogs = Blog_model::paginate(12);
         //print_r($blogs);
         //die();
         return view('blog',['blogs'=>$blogs]);

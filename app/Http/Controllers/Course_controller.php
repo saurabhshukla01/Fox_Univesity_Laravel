@@ -58,6 +58,7 @@ class Course_controller extends Controller
     public function show()
     {
         $courses = DB::select('select * from courses_tables');
+        $courses = Courses_model::paginate(12);
         //print_r($data_values);
         //die();
         return view('courses',['courses'=>$courses]);

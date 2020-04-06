@@ -27,7 +27,7 @@
     	<div class="container">
     		<div class="row no-gutters d-flex align-items-center align-items-stretch">
     			<div class="col-md-4 d-flex align-items-center py-4">
-    				<a class="navbar-brand" href="/">Fox. <span>University</span></a>
+    				<a class="navbar-brand" href="/">C.S.J.M. <span>Kanpur University</span></a>
     			</div>
 	    		<div class="col-lg-8 d-block">
 		    		<div class="row d-flex">
@@ -189,7 +189,7 @@
 
             <p>
                 Copyright &copy;<script>document.write(new Date().getFullYear());</script>
-                <span>Prudigital media pvt Ltd (Fox University website)</span>
+                <span>Prudigital media pvt Ltd ( C.S.J.M. Kanpur University website )</span>
             </p>
           </div>
         </div>
@@ -217,8 +217,6 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="assets/js/google-map.js"></script>
   <script src="assets/js/main.js"></script>
-
-
 <!--<script>
         $(function() {
             $('.error').hide();

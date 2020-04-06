@@ -21,5 +21,8 @@
 				@endforeach
 				</div>
 			</div>
+			<div class="row text-right float-right pr-4">
+                <h5 class="m-2 p-2">{{ $courses->links() }}</h5>
+            </div>
 		</section>
 @endsection

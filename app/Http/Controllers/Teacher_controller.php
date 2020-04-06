@@ -46,6 +46,7 @@ class Teacher_controller extends Controller
         $data->teacher_biology = request('teacher_biology');
         $path = $request->file('teacher_image')->store('Teacher');
         $data->teacher_image = $path;
+        //print_r($path); die();
         //$data->teacher_image = "public/Courses/1.png";
         $data->save();
         return redirect('/add_teacher');
@@ -60,6 +61,7 @@ class Teacher_controller extends Controller
     public function show()
     {
         $teachers = DB::select('select * from teachers');
+        $teachers = Teacher_model::paginate(12);
         //print_r($data_values);
         //die();
         return view('teacher',['teachers'=>$teachers]);

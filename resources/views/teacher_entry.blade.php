@@ -1,7 +1,7 @@
 @extends('layout.common')
 @section('main')
 @section('title', 'Add Teacher')
-<!--<script src="assets/ckeditor/ckeditor.js"></script>-->
+  <script src="assets/ckeditor/ckeditor.js"></script>
 		<section class="ftco-section ftco-no-pt ftc-no-pb">
 			<div class="container">
 			    <h2 class="text-center pt-4 pb-4"> Teacher Entry Form </h2>
@@ -41,34 +41,7 @@
                  </div>
         </div>
     </section>
+    <script type="text/javascript">
+      CKEDITOR.replace('teacher_biology');
+    </script>
 @endsection
-
-<!--<script type="text/javascript">
-   $(document).ready(function() {
-     CKEDITOR.replace(
-       'teacher_biology',
-       {
-           toolbar: [
-               ['Font','FontSize', 'Bold','Italic','Underline','NumberedList','BulletedList']
-           ],
-           width:['1150px'],
-           height :['180px']
-       },
-    )};
-</script>
-<style type="text/css">
-   input[type=file] {
-   -webkit-appearance: none;
-   -moz-appearance: none;
-   appearance: none;
-   background: #EEE;
-   background: linear-gradient(to top, #FFF, #DDD);
-   border: thin solid rgba(0,0,0, .5);
-   border-radius: .25em;
-   box-shadow: inset .25em .25em .25em rgba(255,255,255, .5), inset -.1em -.1em .1em rgba(0,0,0, 0.1);
-   cursor: text;
-   padding: .25em;
-   }
-</style>-->
-
-

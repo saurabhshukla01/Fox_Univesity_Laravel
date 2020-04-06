@@ -1,6 +1,7 @@
 @extends('layout.common')
 @section('main')
 @section('title', 'Add Courses')
+  <script src="assets/ckeditor/ckeditor.js"></script>
 		<section class="ftco-section ftco-no-pt ftc-no-pb">
 			<div class="container">
 			    <h2 class="text-center pt-4 pb-4"> Add Courses Form </h2>
@@ -11,12 +12,6 @@
                               <div class="form-group">
                                 <label for="course_name">Course Name</label>
                                 <input type="text" class="form-control" placeholder="Enter Course Name" name="course_name" id="course_name">
-                              </div>
-                          </div>
-                          <div class="col-md-6">
-                              <div class="form-group">
-                                  <label for="course_descripition">Course Descripition</label>
-                                  <textarea class="form-control" rows="2" name="course_descripition" id="course_descripition"></textarea>
                               </div>
                           </div>
                           <div class="col-md-6">
@@ -38,6 +33,12 @@
                               </div>
                           </div>
                           <div class="col-md-12">
+                              <div class="form-group">
+                                  <label for="course_descripition">Course Descripition</label>
+                                  <textarea class="form-control" rows="2" name="course_descripition" id="course_descripition"></textarea>
+                              </div>
+                          </div>
+                          <div class="col-md-12">
                               <div class="form-group ml-3">
                                 <button type="submit" class="btn btn-primary">Submit</button>
                               </div>
@@ -46,6 +47,9 @@
                  </div>
         </div>
     </section>
+    <script type="text/javascript">
+      CKEDITOR.replace('course_descripition');
+    </script>
 @endsection
 
 

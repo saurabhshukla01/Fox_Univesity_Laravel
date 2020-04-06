@@ -15,6 +15,7 @@ class CreatePersonalInformationTables extends Migration
     {
         Schema::create('personal_information_tables', function (Blueprint $table) {
             $table->Increments('user_id');
+            $table->char('user_uid');
             $table->mediumText('address_line1');
             $table->mediumText('address_line2');
             $table->char('state');

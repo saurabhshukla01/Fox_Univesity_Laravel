@@ -15,6 +15,7 @@ class CreateRegistrationTables extends Migration
     {
         Schema::create('registration_tables', function (Blueprint $table) {
             $table->increments('user_id');
+            $table->char('user_uid');
             $table->char('candidate_name');
             $table->char('candidate_father_name');
             $table->char('gender');
